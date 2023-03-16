@@ -45,7 +45,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Hanken Grotesk;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -515,41 +515,191 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-5{
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.mb-5{
+  margin-bottom: 1.25rem;
+}
+
+.mt-0{
+  margin-top: 0px;
+}
+
 .flex{
   display: flex;
 }
 
-.flex-row{
-  flex-direction: row;
+.h-36{
+  height: 9rem;
 }
 
-.bg-black{
+.h-screen{
+  height: 100vh;
+}
+
+.w-36{
+  width: 9rem;
+}
+
+.basis-9\/20{
+  flex-basis: 44%;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.justify-around{
+  justify-content: space-around;
+}
+
+.justify-evenly{
+  justify-content: space-evenly;
+}
+
+.rounded-full{
+  border-radius: 9999px;
+}
+
+.rounded-b-3xl{
+  border-bottom-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+
+.bg-dark-gray-blue{
   --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  background-color: hsl(224 30% 27% / var(--tw-bg-opacity));
 }
 
-:root {
-  /* primary colors */
-  --light-red: hsl(0, 100%, 67%);
-  --orangey-yellow: hsl(39, 100%, 56%);
-  --green-teal: hsl(166, 100%, 37%);
-  --cobalt-blue: hsl(234, 85%, 45%);
-  /* gradients */
-  --light-slate-blue-background: hsl(252, 100%, 67%);
-  --light-royal-blue-background: hsl(241, 81%, 54%);
-  --violet-blue-circle: hsla(256, 72%, 46%, 1);
-  --persian-blue-circle: hsla(241, 72%, 46%, 0);
-  /* Neutral */
-  --white: hsl(0, 0%, 100%);
-  --pale-blue: hsl(221, 100%, 96%);
-  --light-lavender: hsl(241, 100%, 89%);
-  --dark-gray-blue: hsl(224, 30%, 27%);
+.bg-gradient-to-b{
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
-body {
-  font-size: 18px;
-  font-family: "Hanken Grotesk", sans-serif;
+.bg-gradient-to-t{
+  background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
 
-@media screen and (min-width: 1440px) {
+.from-light-royal-blue-background{
+  --tw-gradient-from: hsl(241, 81%, 54%);
+  --tw-gradient-to: hsl(241 81% 54% / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-violet-blue-circle{
+  --tw-gradient-from: hsla(256, 72%, 46%, 1);
+  --tw-gradient-to: hsla(256, 72%, 46%, 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-light-slate-blue-background{
+  --tw-gradient-to: hsl(252, 100%, 67%);
+}
+
+.to-persian-blue-circle{
+  --tw-gradient-to: hsla(241, 72%, 46%, 0);
+}
+
+.to-light-royal-blue-background{
+  --tw-gradient-to: hsl(241, 81%, 54%);
+}
+
+.px-7{
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.px-16{
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.align-middle{
+  vertical-align: middle;
+}
+
+.text-6xl{
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-\[14px\]{
+  font-size: 14px;
+}
+
+.text-\[16px\]{
+  font-size: 16px;
+}
+
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.font-extrabold{
+  font-weight: 800;
+}
+
+.font-semibold{
+  font-weight: 600;
+}
+
+.text-light-lavender{
+  --tw-text-opacity: 1;
+  color: hsl(241 100% 89% / var(--tw-text-opacity));
+}
+
+.text-white{
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 100% / var(--tw-text-opacity));
+}
+
+.text-pale-blue{
+  --tw-text-opacity: 1;
+  color: hsl(221 100% 96% / var(--tw-text-opacity));
+}
+
+@media (min-width: 1440px){
+  .desktop\:h-2\/5{
+    height: 40%;
+  }
+
+  .desktop\:flex-row{
+    flex-direction: row;
+  }
 }

@@ -12,13 +12,24 @@
     <link rel="stylesheet" href="output.css" />
     <title>Frontend Mentor | Results summary component</title>
   </head>
-  <body class="">
-    <div class="results-summary-box flex flex-row">
-      <div class="results-box">
+  <body
+    class="h-screen text-lg flex flex-col justify-center align-middle text-center"
+  >
+    <div
+      class="results-summary-box h-screen desktop:h-2/5 flex flex-col desktop:flex-row"
+    >
+      <div
+        class="results-box basis-9/20 flex flex-col justify-evenly px-16 bg-gradient-to-t from-light-royal-blue-background to-light-slate-blue-background rounded-b-3xl text-light-lavender"
+      >
         <div class="title">Your Result</div>
-        <div class="result-circle">76 of 100</div>
-        <div class="result-rating">Great</div>
-        <div class="result-comparison">
+        <div
+          class="result-circle mx-auto w-36 h-36 flex flex-col justify-center align-middle bg-gradient-to-b from-violet-blue-circle to-persian-blue-circle rounded-full"
+        >
+          <div class="text-white text-6xl font-semibold">76</div>
+          <div class="text-sm font-semibold">of 100</div>
+        </div>
+        <div class="result-rating text-white text-2xl">Great</div>
+        <div class="result-comparison mb-5 mt-0 text-base">
           You scored higher than 65% of the people who have taken these tests.
         </div>
       </div>
@@ -27,7 +38,7 @@
         <div class="category-ratings">
           Reaction 80 / 100 Memory 92 / 100 Verbal 61 / 100 Visual 72 / 100
         </div>
-        <div class="button">Continue</div>
+        <div class="bg-dark-gray-blue text-white rounded-full">Continue</div>
       </div>
     </div>
   </body>
