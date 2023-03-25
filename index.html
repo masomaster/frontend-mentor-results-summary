@@ -13,32 +13,32 @@
     <title>Frontend Mentor | Results summary component</title>
   </head>
   <body
-    class="h-screen text-lg flex flex-col justify-center align-middle text-center"
+    class="h-screen text-lg flex flex-col desktop:flex-row flex-wrap justify-center content-center text-center"
   >
     <div
-      class="results-summary-box h-screen desktop:h-2/5 flex flex-col desktop:flex-row"
+      class="results-summary-box h-screen flex flex-col desktop:flex-row desktop:justify-center w-390 desktop:w-675 desktop:h-472 desktop:rounded-3xl bg-white desktop:drop-shadow-[0_25px_25px_hsl(234,85%,45%,0.14)]"
     >
       <div
-        class="results-box basis-44/100 flex flex-col px-16 bg-gradient-to-t from-light-royal-blue-background to-light-slate-blue-background rounded-b-3xl text-light-lavender"
+        class="results-box basis-44/100 desktop:basis-1/2 w-96 flex flex-col px-14 bg-gradient-to-t from-light-royal-blue-background to-light-slate-blue-background rounded-b-3xl desktop:rounded-3xl text-light-lavender"
       >
-        <div class="title mt-4 text-lg">Your Result</div>
+        <div class="title mt-4 desktop:mt-6 text-lg desktop:text-xl">Your Result</div>
         <div
-          class="result-circle mt-5 mb-4 mx-auto w-36 h-36 flex flex-col justify-center align-middle bg-gradient-to-b from-violet-blue-circle to-persian-blue-circle rounded-full"
+          class="result-circle mt-5 mb-4 desktop:mt-7 mx-auto basis-39/100 w-36 desktop:w-184 h-full flex flex-col justify-center align-middle bg-gradient-to-b from-violet-blue-circle to-persian-blue-circle rounded-full"
         >
           <div class="text-white text-6xl font-semibold mt-3">76</div>
           <div class="text-base text-light-lavender/50 font-semibold mt-2">
             of 100
           </div>
         </div>
-        <div class="result-rating text-white text-2xl mt-4 mb-2">Great</div>
-        <div class="result-comparison mb-5 mt-0 text-base">
+        <div class="result-rating text-white text-2xl desktop:text-3xl mt-4 mb-2 desktop:mb-4">Great</div>
+        <div class="result-comparison mb-5 mt-0 text-base leading-tight">
           You scored higher than 65% of the people who have taken these tests.
         </div>
       </div>
       <div
-        class="summary-box basis-56/100 flex flex-col justify-evenly align-middle px-8"
+        class="summary-box basis-56/100 desktop:basis-1/2 w-96 flex flex-col justify-evenly align-middle px-8  desktop:rounded-3xl"
       >
-        <div class="title basis-2/12 text-left text-l text-dark-gray-blue font-bold pt-6">
+        <div class="title basis-2/12 text-left text-xl text-dark-gray-blue font-bold pt-6">
           Summary
         </div>
         <div class="category-ratings flex flex-col gap-5 basis-7/12">

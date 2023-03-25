@@ -23,9 +23,18 @@ module.exports = {
       flexBasis: {
         "44/100": "44%",
         "56/100": "56%",
+        "39/100": "39%",
       },
       fontFamily: {
         sans: ["Hanken Grotesk"],
+      },
+      width: {
+        184: "184px",
+        390: "390px",
+        675: "675px",
+      },
+      height: {
+        472: "472px",
       },
     },
     screens: {
