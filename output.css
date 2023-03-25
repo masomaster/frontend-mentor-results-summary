@@ -838,6 +838,10 @@ video {
   color: hsl(0 0% 100% / var(--tw-text-opacity));
 }
 
+.hover\:bg-gradient-to-t:hover{
+  background-image: linear-gradient(to top, var(--tw-gradient-stops));
+}
+
 @media (min-width: 1440px){
   .desktop\:mt-6{
     margin-top: 1.5rem;
