@@ -21,7 +21,8 @@ module.exports = {
         "dark-gray-blue": "hsl(224, 30%, 27%)",
       },
       flexBasis: {
-        "9/20": "44%",
+        "44/100": "44%",
+        "56/100": "56%",
       },
       fontFamily: {
         sans: ["Hanken Grotesk"],
